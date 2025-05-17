@@ -1,0 +1,44 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultra.net.nz/thyemeleaf/layout"
+      layout:decorate = ~{layout}>
+
+
+
+    <body layout:fragment = "body">
+
+
+        <div class="container mt-5" >
+            <div class="card shadow-lg">
+                <form class="row g-3" method="post">
+
+                    <div class="row">
+                        <div class="col-md-12 text-center d-flex flex-column align-items-center">
+                            <div class="">
+                                <img id="previewImage" style="max-width: 100px; max-height: auto" class="mx-auto" 
+                                     src="https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png">
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <i class="bi bi-person-vcard-fill"></i> <label for="Username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">                
+                        </div>
+
+
+                        <div class="col-12">
+                            <br>
+                            <label for="pass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-secondary w-150"><i class="bi bi-person-add"></i>LogIn</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
